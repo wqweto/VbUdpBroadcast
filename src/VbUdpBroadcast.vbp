@@ -1,0 +1,44 @@
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{26E1B82A-01EF-4120-BE7D-04FCA41E7E74}#1.0#0#..\..\..\UcsFP20\bin\NTVBSvcW.tlb#VB-friendly NT Service Unicode API Functions
+Module=mdStartup; mdStartup.bas
+Module=mdConsole; Shared\mdConsole.bas
+Module=mdNtService; Shared\mdNtService.bas
+Class=cAsyncSocket; Shared\cAsyncSocket.cls
+Form=frmMain.frm
+Startup="Sub Main"
+HelpFile=""
+Title="VbUdpBroadcast"
+ExeName32="VbUdpBroadcast.exe"
+Path32="..\bin"
+Command32="--console -v"
+Name="VbUdpBroadcast"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=1
+MinorVer=0
+RevisionVer=0
+AutoIncrementVer=0
+ServerSupportFiles=0
+VersionCompanyName="Unicontsoft"
+VersionLegalCopyright="Copyright (c) 2022 by wqweto@gmail.com"
+VersionProductName="UDP Broadcast Forwarder"
+CondComp="USE_DEBUG_LOG = 1"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1
+
+[VBCompiler]
+LinkSwitches=/SUBSYSTEM:CONSOLE
